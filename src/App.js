@@ -4,15 +4,10 @@ import data from './components/data.js';
 import Box from './components/box';
 
 const App = () => {
-	// eslint-disable-next-line no-console
-	console.log(data);
 	const { people } = data;
 
-	return (
-		<div className="App">
-			{people.map(Box)}
-		</div>
-	);
+	return <div className="App">
+		{Box(people)}</div>;
 };
 
 export default App;

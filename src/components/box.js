@@ -1,18 +1,15 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
-import React from 'react';
+/* eslint-disable react/destructuring-assignment */
 
-const Box = (people) => {
-	const { name } = people;
-	const { age } = people;
-	const { color } = people;
+import { React } from 'react';
+import Box from './person';
 
-	return <div
-		style={ {
-			backgroundColor: color,
-		} }
-	       >
-		Hello! { name }.Your age is { age }
+const People = (people) => {
+	const count = people.length;
+
+	return <div>.
+		<div>{ people.map(Box) }</div>
+		<div>People Count : { count } </div>
 	</div>;
 };
 
-export default Box;
+export default People;
