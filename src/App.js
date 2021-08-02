@@ -1,13 +1,9 @@
 import { React } from 'react';
 import './App.scss';
-import data from './components/data.js';
-import Box from './components/box';
+import NumberButton from './components/numberButton';
+import numbers from './components/numbers';
 
-const App = () => {
-	const { people } = data;
-
-	return <div className="App">
-		{Box(people)}</div>;
-};
+const App = () => <div className="App">
+	{ numbers.map(NumberButton) }</div>;
 
 export default App;
