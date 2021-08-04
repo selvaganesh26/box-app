@@ -1,9 +1,9 @@
-const increaseCount = ({ state, data }) => ({
-	count: state.count + data,
+const setCount = ({ data }) => ({
+	count: data,
 });
 
 const actions = {
-	increaseCount,
+	setCount,
 };
 
 export default actions;
