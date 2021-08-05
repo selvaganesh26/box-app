@@ -6,7 +6,7 @@ import numbers from './components/numbers';
 import context from './core/context.js';
 
 const App = () => <div className="App">
-	{ numbers.map(NumberButton) }
+	{ numbers.map((number) => number.map(NumberButton)) }
 	{ context.state.count }</div>;
 
 export default App;
